@@ -44,7 +44,7 @@ header {
     letter-spacing: -4.666px;
 }
 
-.header__nav_list li {
+.header__nav_list a {
     display: inline;
     color: #FFF;
     font-family: "IBM Plex Mono";
@@ -54,11 +54,12 @@ header {
     line-height: normal;
     letter-spacing: -0.54px;
     text-transform: lowercase;
+    text-decoration: none;
 }
-.header__nav_list li:not(:last-child){
+.header__nav_list a:not(:last-child){
     margin-right: 50px;
 }
-.header__nav_list li:hover {
+.header__nav_list a:hover {
     cursor: pointer;
     opacity: 0.5;
     color: #1BFF07;
@@ -192,15 +193,15 @@ main {
 .main__button_all_projects_text:hover {
    color: #1BFF07;
 }
-/* main__my_competences _______________________ */
+/* main__services _______________________ */
 
-.main__my_competences {
+.main__services {
     width: 1150px;
     margin: 0 auto;
     margin-bottom: 150px;
 }
 
-.main__my_competences__title {
+.main__services__title {
     color: #FFF;
     font-family: "IBM Plex Mono";
     font-size: 55px;
@@ -211,11 +212,11 @@ main {
     margin-bottom: 48px;
 }
 
-.main__my_competences__hard_skills img {
+.main__services__hard_skills img {
     margin-bottom: 12px;
 }
 
-.main__my_competences__hard_skills h3 {
+.main__services__hard_skills h3 {
     color: #1BFF07;
     font-family: "IBM Plex Mono";
     font-size: 35px;
@@ -225,7 +226,7 @@ main {
     letter-spacing: -1.05px;
     margin-bottom: 15px;
 }
-.main__my_competences__hard_skills p {
+.main__services__hard_skills p {
     width: 778px;
     color: #FFF;
     font-family: "IBM Plex Mono";
@@ -236,7 +237,7 @@ main {
     letter-spacing: -0.66px;
 }
 
-.main__my_competences__hard_skills:not(:last-child) {
+.main__services__hard_skills:not(:last-child) {
     margin-bottom: 60px;
 }
 .hard_skills_html h3,
@@ -248,7 +249,7 @@ main {
     width: 651px;
 }
 
-.main__my_competences_subtitle {
+.main__services_subtitle {
     width: 403px;
     color: #FFF;
     font-family: "IBM Plex Mono";
@@ -259,14 +260,14 @@ main {
     letter-spacing: -1.05px;
     margin-bottom: 74px;
 }
-.main__my_competences_solution-tasks img {
+.main__services_solution-tasks img {
     width: 1150px;
     height: 200px;
     flex-shrink: 0;
     border-radius: 30px;
 /* background: url(<path-to-image>), lightgray 0px -46.747px / 100% 431.25% no-repeat; */
 }
-.main__my_competences_solution-tasks div {
+.main__services_solution-tasks div {
     width: 1150px;
     height: 283px;
     flex-shrink: 0;
@@ -274,7 +275,7 @@ main {
     background: #191C19;
 }
 
-.main__my_competences_solution-tasks div h3 {
+.main__services_solution-tasks div h3 {
     width: 1048px;
     color: #1BFF07;
     font-family: "IBM Plex Mono";
@@ -287,7 +288,7 @@ main {
     margin-left: 40px;
     margin-bottom: 15px;
 }
-.main__my_competences_solution-tasks div p {
+.main__services_solution-tasks div p {
     width: 749px;
     color: #FFF;
     font-family: "IBM Plex Mono";
