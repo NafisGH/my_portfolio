@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'IBM Plex Mono', monospace;
     width: 1400px;
@@ -314,6 +318,7 @@ main {
     width: 1400px;
     height: 717px;
     border-radius: 35px;
+
 }
 
 /* foooter _____________________________________________ */
@@ -325,6 +330,7 @@ footer {
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
     background: #FFF;
+    
 }
 
 footer p {
@@ -349,3 +355,4 @@ footer p {
     letter-spacing: -0.6px;
     margin-left: 150px;
 }
+
