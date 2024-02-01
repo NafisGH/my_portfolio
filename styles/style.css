@@ -4,99 +4,81 @@ html {
 
 body {
     font-family: 'IBM Plex Mono', monospace;
-    width: 1400px;
-    margin: 0 auto;
-    background-color: #000;
 }
 
 /* header ---------------------------------------- */
-header {
-    background-image: url('../img/my_photo.jpg');
-    background-repeat: no-repeat;
+.header_container {
     width: 1400px;
-    height: 765px;
-    position: relative;
-}
-
-.header__box {
-    width: 1150px;
     margin: 0 auto;
+    padding-left: 125px;
+    padding-right: 125px;
+    background-image: url('../img/my_photo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
     
 }
-.header__container {
+.header-inner {
+    position: relative;
+    height: 765px;
+
+}
+.logo_nav_wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 35px;
-
+    align-items: start;
+    padding-top: 36px;
 }
-
 .header__logo {
-    background-color: black;
     width: 130px;
-    /* flex-shrink: 0; */
+    height: 39px;
     border-radius: 100px;
-
+    background: #000;
 }
-.header__logo_text {
+.header__logo p {
+    color: #1BFF07;
     text-align: center;
-    color: #1BFF07;
-    font-size: 42.414px;
-    font-style: normal;
-    font-weight: 700;
-    /* line-height: normal; */
+    font-size: 42px;
+    line-height: 40px;
     letter-spacing: -4.666px;
+    text-transform: uppercase;
 }
-
-.header__nav_list a {
-    display: inline;
-    color: #FFF;
-    font-family: "IBM Plex Mono";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: -0.54px;
-    text-transform: lowercase;
+.header__nav-wrapper {
+    display: flex;
+}
+.header__nav-wrapper a {
+    display: block;
     text-decoration: none;
+    color: #FFF;
+    font-size: 21px;
+    letter-spacing: -0.54px;
 }
-.header__nav_list a:not(:last-child){
-    margin-right: 50px;
+.header__nav-wrapper a:not(:first-child) {
+    margin-left: 50px;
 }
-.header__nav_list a:hover {
-    cursor: pointer;
-    opacity: 0.5;
-    color: #1BFF07;
-}
-
-.header__content {
+.header__about-me_container {
     position: absolute;
     bottom: 94px;
 }
-.header__content_about-me {
+.about-me {
     width: 430px;
     height: 103px;
-    flex-shrink: 0;
     color: #FFF;
-    font-family: "IBM Plex Mono";
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     letter-spacing: -0.6px;
+    flex-shrink: 0;
     margin-bottom: 29px;
 }
-.header__content_it-is-me {
+.about-me_greeting {
     width: 919px;
     height: 205px;
     flex-shrink: 0;
     color: #1BFF07;
-    font-family: "IBM Plex Mono";
     font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 70px; /* 87.5% */
+    line-height: 70px;
     letter-spacing: -2.4px;
 }
+
 
 /* main ---------------------------------------- */
 main {
