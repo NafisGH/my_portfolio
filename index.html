@@ -3,161 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <title>My portfolio</title>
 </head>
 <body>
-    <header>
-        <div class="header_container">
-            <div class="header-inner">
-                <div class="logo_nav_wrapper">
-                    <div class="header__logo">
-                        <p>NAFIS</p>
+    <header class="header">
+        <div class="header__container">
+            <div class="header__container-inner">
+                <div class="header__wrapper">
+                    <div class="logo-wrapper">
+                        <p class="logo-img">NAFIS</p>
                     </div>
-                    <nav class="header__nav-wrapper">
-                            <a href="#portfolio">портфолио</a>
-                            <a href="#main__services">компетенции</a>
-                            <a href="#services">услуги</a>
-                            <a href="#communication">контакты</a>
+                    <div class="header__nav-wrapper">
+                        <nav class="nav">
+                            <a class="nav__link nav__link_active" href="#portfolio">портфолио</a>
+                            <a class="nav__link " href="#main__services">компетенции</a>
+                            <a class="nav__link" href="#services">услуги</a>
+                            <a class="nav__link" href="#communication">контакты</a>
                     </nav>
-                </div>
-                
-
-        
-                    <div class="header__about-me_container">
-                        <p class="about-me">
-                            Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов
-                        </p>
-                        <p class="about-me_greeting">
-                            Привет, я Нафис — фронтенд разарботчик и дизайнер сайтов
-                        </p>
                     </div>
+                </div>
+                <div class="header__about-me-wrapper">
+                    <p class="header__about-me-skils">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
+                    <p class="header__about-me-greeting">Привет, я Нафис — фронтенд разарботчик и дизайнер сайтов</p>
+                </div>
             </div>
         </div>
-
-        
     </header>
 
-    <!-- <main>
-        <div id="portfolio" class="main__container_new_projects">
+    <main>
+        <section class="projects">
+            <div class="projects__container">
+                <div class="projects__inner">
+                        <p class="projects__title">Самые свежие проекты</p>
 
-            <p class="main__container_title">Самые свежие проекты</p>
+                            <div class="slide__metrica-img">
+                                <div class="slide__name_wrapper">
+                                    <p class="slide__name">дизайн интерьера</p>
+                                </div>
+                                <div class="slide__discription-wrapper">
+                                    <h3>Метрика</h3>
+                                    <p>верстка, настройка</p>
+                                </div>
 
-            <div class="main__new_projects">
-                <div class="main__new_projects_realhome">
-                    <div class="main__new_projects_description">
-                        <h3>Realhome</h3>
-                        <p>дизайн,верстка, настройка</p>
-                    </div>
+                            </div>
+                            <div class="slide__nothing-img">
+                                <div class="slide__name_wrapper">
+                                    <p class="slide__name">презентация продукта</p>
+                                </div>
+                                <div class="slide__discription-wrapper">
+                                    <h3>Nothing</h3>
+                                    <p>верстка, настройка</p>
+                                </div>
+                            </div>
+                            <div class="slide__toptrip-img">
+                                <div class="slide__name_wrapper">
+                                    <p class="slide__name">заказ путешествий</p>
+                                </div>
+                                <div class="slide__discription-wrapper">
+                                    <h3>TOPTRIP</h3>
+                                    <p>верстка</p>
+                                </div>
+                            </div>
+
+                        <button class="projects__btn-see-all">Смотреть все проекты</button>
                 </div>
-            </div>
-            <div class="main__new_projects">
-                <div class="main__new_projects_glass">
-                    <div class="main__new_projects_description">
-                        <h3>GLASS</h3>
-                        <p>разработка интерфейса</p>
-                    </div>
-                </div>
-            </div>
-            <div class="main__new_projects">
-                <div class="main__new_projects_fesiyen">
-                    <div class="main__new_projects_description">
-                        <h3>Fesiyen</h3>
-                        <p>разработка интерфейса</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="main__button_all_projects">
-                <p> <a class="main__button_all_projects_text" href="#">Смотреть все проекты</a> </p>
-            </div>
-        </div>
 
-        <div id="main__services" class="main__services">
-            <p class="main__services__title">Мои компетенции</p>
-
-            <div class="main__services__hard_skills hard_skills_html">
-                <img src="./img/html.png">
-                <h3>HTML и CSS</h3>
-                <p>это основа фронтенд разработки. Умение создавать и 
-                    правильно структурировать HTML-документы, а также 
-                    применять стили к этим документам на CSS, является 
-                    обязательным навыком для каждого фронтенд разработчика.
-                </p>
-            </div>
-            <div class="main__services__hard_skills hard_skills_JS">
-                <img src="./img/JS.png">
-                <h3>JavaScript</h3>
-                <p>это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.
-                </p>
-            </div>
-            <div class="main__services__hard_skills hard_skills_frameworks">
-                <img src="./img/frameworks.png">
-                <h3>Работа с библиотеками и фреймворками</h3>
-                <p>фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.
-                </p>
-            </div>
-            <div class="main__services__hard_skills hard_skills_phone">
-                <img src="./img/phone.png">
-                <h3>Разработка для мобильных устройств и адаптивная верстка</h3>
-                <p>фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.
-                </p>
             </div>
 
-            <p id="services" class="main__services_subtitle">
-                Помогаю реализовать широкий спектр задач
-            </p>
-
-            <div class="main__services_solution-tasks turnkey_site">
-                <img src="./img/turnkey_site.jpg" alt="foto">
-                <div>
-                    <h3>Разработка сайта под ключ</h3>
-                    <p>Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач
-                        Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие
-                    </p>
-                </div>
-                
-            </div>
-            <div class="main__services_solution-tasks site_layout">
-                <img src="./img/site_layout.jpg" alt="foto">
-                <div>
-                    <h3>Верстка сайтов</h3>
-                    <p>Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта
-                    </p>
-                </div>
-                
-            </div>
-            <div class="main__services_solution-tasks mobile_interface">
-                <img src="./img/mobile_interface.jpg" alt="foto">
-                <div>
-                    <h3>Разработка мобильного интерфейса</h3>
-                    <p>Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-
-        <section id="communication" class="main__for_communication_img">
-            <!-- <div class="contacts">
-                <p class="contacts_instagram">instagram</p>
-                <p class="contacts_telegram">telegram</p>
-                <p class="contacts_mail"><a href="mailto:mail@.ru">mail@.ru</a></p>
-            </div> -->
         </section>
-        
-        
-    </main> -->
+
+    </main>
+
+    <footer>
+
+    </footer>
+   
     
 
-    <!-- <footer>
-            <p>Портфолио фротнтенд-разработчика Нафис Гарифуллин</p>
-            <p>Все права защищены. 2024</p>
-    </footer> -->
     
 </body>
 </html>
