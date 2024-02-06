@@ -2,11 +2,19 @@
 @import "./projects";
 @import "./competencies";
 @import "./service";
+@import "./contacts";
+@import "./footer";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 body {
-    font-family: 'IBM Plex Mono', monospace;
-}
+  font-family: "IBM Plex Mono", monospace;
+  width: 1400px;
+  margin: 0 auto;
+  background: #000;
 
+}
+.main {
+   
+}
