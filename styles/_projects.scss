@@ -17,6 +17,9 @@
 }
 .projects__inner {
   padding-top: 150px;
+  a:hover {
+    opacity: 0.5;
+  }
 }
 .projects__title {
   color: #fff;

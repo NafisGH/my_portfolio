@@ -4,6 +4,7 @@
 @import "./service";
 @import "./contacts";
 @import "./footer";
+@import "./burger-menu";
 
 html {
   scroll-behavior: smooth;
@@ -13,8 +14,9 @@ body {
   width: 1400px;
   margin: 0 auto;
   background: #000;
-
 }
-.main {
-   
+@media (max-width: 768px) {
+  body {
+    width: 960px;
+  }
 }
