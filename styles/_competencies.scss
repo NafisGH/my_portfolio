@@ -1,5 +1,5 @@
 .competencies {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
   background: #000;
   padding-left: 125px;
@@ -18,7 +18,7 @@
   justify-content: space-between;
   row-gap: 40px;
 }
-.skill-html-css {
+.competencies__skills-wrapper {
   img {
     margin-bottom: 15px;
   }
@@ -30,10 +30,51 @@
   letter-spacing: -1.05px;
   margin-bottom: 15px;
 }
+.skill-frameworks {
+  .skill-title{
+    margin-bottom: 53px;
+  }
+}
 .skill-description {
   width: 535px;
   color: #fff;
   font-size: 22px;
   letter-spacing: -0.66px;
   line-height: 27px;
+}
+
+@media (max-width: 768px) {
+  .competencies {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .competencies__skills-wrapper {
+    img {
+      width: 36px;
+      height: 36px;
+      margin-bottom: 10px;
+    }
+    .skill-frameworks {
+      .skill-title{
+        margin-bottom: 34px;
+      }
+    }
+    .skill-title {
+      width: 460px;
+      font-size: 18px;
+      letter-spacing: -0.54px;
+    }
+    .skill-description {
+      width: 460px;
+      font-size: 18px;
+      letter-spacing: -0.54px;
+      line-height: 23px;
+    }
+  }
+
+  .competencies__title {
+    font-size: 45px;
+    letter-spacing: -1.35px;
+    margin-bottom: 60px;
+  }
 }

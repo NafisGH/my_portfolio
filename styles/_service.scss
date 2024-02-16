@@ -1,5 +1,5 @@
 .service {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
   background: #000;
   padding-left: 125px;
@@ -19,6 +19,8 @@
 .servis__description-img-wrapper {
   height: 200px;
   img {
+    width: 100%;
+      height: 100%;
     border-radius: 30px;
   }
 }
@@ -28,9 +30,7 @@
   background: #191c19;
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding: 40px 45px 0px 45px ;
 }
 .servis__description-title {
   width: 470px;
@@ -45,4 +45,42 @@
   font-size: 22px;
   letter-spacing: -0.66px;
   line-height: 27px;
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 110px;
+  }
+  .service__title {
+    width: 326px;
+    font-size: 28px;
+    letter-spacing: -0.850px;
+    margin-bottom: 60px;
+  }
+  .servis__description-img-wrapper {
+    height: 162px;
+    width: 930px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .servis__description {
+    height: 229px;
+    padding: 32px 38px 0px 32px ;
+  }
+  .servis__description-title {
+    width: 470px;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -1.65px;
+  }
+  .servis__description-text {
+    width: 425px;
+    font-size: 18px;
+    letter-spacing: -0.654px;
+    line-height: 25px;
+  }
 }

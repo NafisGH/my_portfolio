@@ -120,10 +120,11 @@
   width: 100%;
   height: 550px;
   position: relative;
+  border-radius: 25px;
 }
 
 .projects__container {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
   background: #000;
   padding-left: 125px;
@@ -135,7 +136,7 @@
   padding-top: 150px;
 }
 .projects__inner a:hover {
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .projects__title {
@@ -168,6 +169,7 @@
 .slide__name_wrapper .slide__name {
   font-size: 20px;
   letter-spacing: -0.6px;
+  color: #000;
 }
 
 .slide__discription-wrapper {
@@ -198,8 +200,54 @@
   margin-top: 80px;
 }
 
+.projects__btn-see-all:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .projects__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .projects__title {
+    color: #fff;
+    font-size: 45px;
+    letter-spacing: -1.35px;
+    margin-bottom: 53px;
+  }
+  .slide__name_wrapper {
+    padding: 8px 16px;
+    border-radius: 80px;
+    top: 40px;
+    left: 35px;
+  }
+  .slide__name_wrapper .slide__name {
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
+  .slide__discription-wrapper {
+    left: 40px;
+    bottom: 40px;
+  }
+  .slide__discription-wrapper h3 {
+    font-size: 28px;
+    letter-spacing: -0.84px;
+  }
+  .slide__discription-wrapper p {
+    font-size: 24px;
+    letter-spacing: -0.72px;
+  }
+  .projects__btn-see-all {
+    width: 460px;
+    height: 124px;
+    padding: 45px 68px;
+    font-size: 25px;
+    margin-top: 64px;
+  }
+}
 .competencies {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
   background: #000;
   padding-left: 125px;
@@ -226,7 +274,7 @@
   row-gap: 40px;
 }
 
-.skill-html-css img {
+.competencies__skills-wrapper img {
   margin-bottom: 15px;
 }
 
@@ -238,6 +286,10 @@
   margin-bottom: 15px;
 }
 
+.skill-frameworks .skill-title {
+  margin-bottom: 53px;
+}
+
 .skill-description {
   width: 535px;
   color: #fff;
@@ -246,8 +298,38 @@
   line-height: 27px;
 }
 
+@media (max-width: 768px) {
+  .competencies {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .competencies__skills-wrapper img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+  }
+  .competencies__skills-wrapper .skill-frameworks .skill-title {
+    margin-bottom: 34px;
+  }
+  .competencies__skills-wrapper .skill-title {
+    width: 460px;
+    font-size: 18px;
+    letter-spacing: -0.54px;
+  }
+  .competencies__skills-wrapper .skill-description {
+    width: 460px;
+    font-size: 18px;
+    letter-spacing: -0.54px;
+    line-height: 23px;
+  }
+  .competencies__title {
+    font-size: 45px;
+    letter-spacing: -1.35px;
+    margin-bottom: 60px;
+  }
+}
 .service {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
   background: #000;
   padding-left: 125px;
@@ -271,6 +353,8 @@
   height: 200px;
 }
 .servis__description-img-wrapper img {
+  width: 100%;
+  height: 100%;
   border-radius: 30px;
 }
 
@@ -284,9 +368,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding: 40px 45px 0px 45px;
 }
 
 .servis__description-title {
@@ -305,11 +387,48 @@
   line-height: 27px;
 }
 
+@media (max-width: 768px) {
+  .service {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 110px;
+  }
+  .service__title {
+    width: 326px;
+    font-size: 28px;
+    letter-spacing: -0.85px;
+    margin-bottom: 60px;
+  }
+  .servis__description-img-wrapper {
+    height: 162px;
+    width: 930px;
+  }
+  .servis__description-img-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
+  .servis__description {
+    height: 229px;
+    padding: 32px 38px 0px 32px;
+  }
+  .servis__description-title {
+    width: 470px;
+    font-size: 45px;
+    line-height: 100%;
+    letter-spacing: -1.65px;
+  }
+  .servis__description-text {
+    width: 425px;
+    font-size: 18px;
+    letter-spacing: -0.654px;
+    line-height: 25px;
+  }
+}
 .contacts {
-  width: 1400px;
+  width: 100%;
   margin: 0 auto;
   border-radius: 30px;
-  background: #191C19;
+  background: white;
   padding-left: 125px;
   margin-bottom: 10px;
 }
@@ -323,12 +442,20 @@
           justify-content: space-between;
 }
 
+.contacts__column-img {
+  height: 717px;
+}
+.contacts__column-img img {
+  height: 100%;
+}
+
 .contacts__column-form {
-  width: 567px;
+  background: none;
+  width: 467px;
 }
 .contacts__column-form h2 {
-  color: #fff;
-  font-size: 60px;
+  color: #191C19;
+  font-size: 50px;
   line-height: 60px;
   letter-spacing: -1.8px;
   margin-top: 100px;
@@ -366,14 +493,50 @@
   width: 450px;
   padding: 20px;
   font-size: 22px;
-  border-radius: 10px;
+  border-radius: 20px;
   background: #1BFF07;
   margin-top: 60px;
 }
 
+@media (max-width: 768px) {
+  .contacts {
+    padding-left: 15px;
+    margin-bottom: 7px;
+  }
+  .contacts__column-form {
+    width: 383px;
+    margin-left: 50px;
+  }
+  .contacts__column-form h2 {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.2px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .contacts__column-form input {
+    width: 80%;
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
+  .contacts__column-form #name {
+    margin-bottom: 17px;
+  }
+  .contacts__column-form button {
+    width: 383px;
+    padding: 15px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+  .contacts__column-img {
+    height: 484px;
+  }
+  .contacts__column-img img {
+    height: 100%;
+  }
+}
 .footer__container {
   width: 100%;
-  height: 273px;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   background: #fff;
@@ -411,6 +574,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 74px;
 }
 .footer__bottom-row .footer__rights-protected,
 .footer__bottom-row .footer__data-processing-policy {
@@ -420,6 +584,36 @@
   opacity: 0.5;
 }
 
+@media (max-width: 768px) {
+  .footer__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footer__inner {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .footer__top-row {
+    padding-top: 51px;
+    margin-bottom: 43px;
+  }
+  .footer__top-row .footer__social-networks p {
+    margin-left: 14px;
+    font-size: 16px;
+  }
+  .footer__top-row .footer__autor {
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
+  .footer__bottom-row {
+    padding-bottom: 50px;
+  }
+  .footer__bottom-row .footer__rights-protected,
+  .footer__bottom-row .footer__data-processing-policy {
+    font-size: 14px;
+    letter-spacing: -0.42px;
+  }
+}
 .burger {
   position: fixed;
   top: 0;
